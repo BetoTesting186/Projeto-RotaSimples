@@ -26,7 +26,7 @@ $total = mysqli_num_rows($dados);
                 width: 100%;
                 height: 25%;
             }
-           
+
             .table-hover > tbody > tr:hover{
                 background: #0fbff2;
 
@@ -44,7 +44,7 @@ $total = mysqli_num_rows($dados);
         </style>
 
         <div class="panel-heading"><center><h2>Relatório de Usuários</h2></center></div>
-        <center><table class="table table-striped table-condensed table-bordered">
+    <center><table class="table table-striped table-condensed table-bordered">
 
             <tr>
                 <td> 
@@ -65,7 +65,6 @@ $total = mysqli_num_rows($dados);
 
 
             <?php
-
             if ($total > 0) {
                 do {
                     ?>
@@ -90,16 +89,15 @@ $total = mysqli_num_rows($dados);
             }
             ?>
         </table>
-            <table>
+        <table>
             <tr>
                 <td style="color:blue;margin-left:30px;font-size: 15px;"><?php echo "Total de Usuários: ", $total; ?></td>
 
             </tr>
         </table></center>
 
-    </body>
+</body>
 </html>
 <?php
-
 mysqli_free_result($dados);
 ?>

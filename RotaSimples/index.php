@@ -47,17 +47,17 @@ session_start();
 
             </form>
             <p class="text-center text-danger">
-<?php
-if (isset($_SESSION['loginErro'])) {
-    echo $_SESSION['loginErro'];
-    unset($_SESSION['loginErro']);
-}
-?>
+                <?php
+                if (isset($_SESSION['loginErro'])) {
+                    echo $_SESSION['loginErro'];
+                    unset($_SESSION['loginErro']);
+                }
+                ?>
             </p>
-        </div> <!-- /container -->
+        </div> 
 
 
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
         <script src="js/ie10-viewport-bug-workaround.js"></script>
     </body>
 </html>
