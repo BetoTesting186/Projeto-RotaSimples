@@ -36,13 +36,14 @@ session_start();
                         <div class="form-group">
                             <label for="inputTipo" class="col-sm-2 control-label">Tipo</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="tipo" placeholder="Tipo de Entrega">
+                                <input type="text" class="form-control" name="tipo" placeholder="Tipo de Entrega" required autofocus>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <button type="submit" class="btn btn-success">Cadastrar</button>
+                                <button type='reset' class="btn btn-primary">Limpar</button>
                             </div>
                         </div>
                     </form>

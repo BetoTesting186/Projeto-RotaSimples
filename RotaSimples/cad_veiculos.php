@@ -37,53 +37,53 @@ session_start();
                         <div class="form-group">
                             <label for="inputTipo" class="col-sm-2 control-label">Tipo</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="tipo" placeholder="Tipo do veículo">
+                                <input type="text" class="form-control" name="tipo" placeholder="Tipo do veículo" required autofocus>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="inputMarca" class="col-sm-2 control-label">Marca</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="marca" placeholder="Marca">
+                                <input type="text" class="form-control" name="marca" placeholder="Marca" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="inputModelo" class="col-sm-2 control-label">Modelo</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="modelo" placeholder="Modelo">
+                                <input type="text" class="form-control" name="modelo" placeholder="Modelo" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="inputRenavam" class="col-sm-2 control-label">Renavam</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="renavam" placeholder="Renavam">
+                                <input type="text" class="form-control" name="renavam" placeholder="Renavam" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputAno" class="col-sm-2 control-label">Ano</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="ano" placeholder="Ano">
+                                <input type="text" class="form-control" name="ano" placeholder="Ano" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="inputKM" class="col-sm-2 control-label">Kilometragem</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="kilometragem" placeholder="Kilometragem">
+                                <input type="text" class="form-control" name="kilometragem" placeholder="Kilometragem" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputCor" class="col-sm-2 control-label">Cor</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="cor" placeholder="Cor">
+                                <input type="text" class="form-control" name="cor" placeholder="Cor" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputCapacidade" class="col-sm-2 control-label">Capacidade</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="capacidade" placeholder="Capacidade">
+                                <input type="text" class="form-control" name="capacidade" placeholder="Capacidade" required>
                             </div>
                         </div>
 
@@ -91,6 +91,7 @@ session_start();
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <button type="submit" class="btn btn-success">Cadastrar</button>
+                                <button type='reset' class="btn btn-primary">Limpar</button>
                             </div>
                         </div>
                     </form>
