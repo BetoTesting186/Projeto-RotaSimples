@@ -18,6 +18,10 @@ $total = mysqli_num_rows($dados);
 <html>
     <head>
         <title>Relatório de Veículos</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="css/theme.css" rel="stylesheet">
+        <script src="js/ie-emulation-modes-warning.js"></script>
     </head>
     <body>
 
@@ -42,7 +46,19 @@ $total = mysqli_num_rows($dados);
 
         </style>
 
-        <div class="panel-heading"><center><h2>Relatório de Veículos</h2></center></div>
+
+        <div class="container theme-showcase" role="main">      
+            <div class="page-header">
+
+                <a href="sair.php"><button type="button" class="btn btn-danger" style="float: right;">Sair</button></a>
+               <!-- <a href="perfil-administrador.php"><button type="button" class="btn btn-info" style="float: right;margin-right: 4px">Inicio</button></a>-->
+                <center><h1>Relatório de Veículos</h1></center>
+            </div>
+
+        </div>
+
+
+
         <center><table class="table table-striped table-condensed table-bordered">
 
             <tr>
@@ -108,6 +124,8 @@ $total = mysqli_num_rows($dados);
 
             </tr>
         </table></center>
+
+    
 
     </body>
 </html>

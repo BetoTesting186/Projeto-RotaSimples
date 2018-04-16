@@ -27,6 +27,7 @@ session_start();
     <body role="document">	
         <div class="container theme-showcase" role="main">      
             <div class="page-header">
+                <a href="sair.php"><button type="button" class="btn btn-danger" style="float: right;">Sair</button></a>
                 <h1>Cadastrar Entregadores</h1>
             </div>
             <div class="row">

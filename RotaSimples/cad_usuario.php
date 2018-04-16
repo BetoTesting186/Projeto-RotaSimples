@@ -24,14 +24,21 @@ session_start();
         </style>
     </head>
 
-    <body role="document">	
-        <div class="container theme-showcase" role="main">      
+
+
+<div class="container theme-showcase" role="main">      
             <div class="page-header">
 
+                <a href="sair.php"><button type="button" class="btn btn-danger" style="float: right;">Sair</button></a>
+               <!-- <a href="perfil-administrador.php"><button type="button" class="btn btn-info" style="float: right;margin-right: 4px">Inicio</button></a>-->
                 <h1>Cadastrar Usuário</h1>
             </div>
 
         </div>
+
+
+
+
 
 
 
@@ -81,6 +88,7 @@ session_start();
                         <div class="col-sm-offset-2 col-sm-10">
                             <button type="submit" class="btn btn-success">Cadastrar</button>
                             <button type='reset' class="btn btn-primary">Limpar</button>
+                            <!-- <button type="button" class="btn btn-danger">Excluir</button> -->
 
                         </div>
                     </div>
