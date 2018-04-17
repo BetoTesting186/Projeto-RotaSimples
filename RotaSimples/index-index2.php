@@ -32,7 +32,7 @@ and open the template in the editor.
                 <!--<a class="navbar-brand" href="index.php"><font color="black">Inicial</font></a>-->
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--     -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                   
@@ -42,7 +42,7 @@ and open the template in the editor.
                         <a href="#" class="dropdown-toggle  bg-light" style="background-color: #FFA500;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros<span class="caret"></span></a>                      
                         <ul class="dropdown-menu bg-light " style="background-color: black;">
                            
-                            <li><a class=" bg-light" style="background-color: #f60;" href="cad_usuario.php"><font color="#fff">Cadastro de Usuários</font></a></li>
+                           <!-- <li><a class=" bg-light" style="background-color: #f60;" href="cad_usuario.php"><font color="#fff">Cadastro de Usuários</font></a></li>-->
                             <li><a class=" bg-light" style="background-color: #f60;" href="cad_veiculos.php"><font color="#fff">Cadastro de Veículos</font></a></li>
                             <li><a class=" bg-light" style="background-color: #f60;" href="cad_entregadores.php"><font color="#fff">Cadastro de Entregadores</font></a></li>
                             <li><a class=" bg-light" style="background-color: #f60;" href="cad_tipo.php"><font color="#fff">Cadastro de Tipo de Entregas</font></a></li>                            
