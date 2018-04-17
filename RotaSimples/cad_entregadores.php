@@ -44,16 +44,21 @@ session_start();
                         <div class="form-group">
                             <label for="inputIdade" class="col-sm-2 control-label">Idade</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="idade" placeholder="Idade" required>
+                                <input type="number" class="form-control" name="idade" placeholder="Idade" required="number">
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="inputSexo" class="col-sm-2 control-label">Sexo</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="sexo" placeholder="sexo" required>
-                            </div>
+
+                   <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Sexo</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="sexo" required="option">
+                                <option> </option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Feminino</option>
+                            </select>
                         </div>
+                    </div>
 
                         <div class="form-group">
                             <label for="inputEndereco" class="col-sm-2 control-label">Endereço</label>
@@ -67,12 +72,20 @@ session_start();
                                 <input type="text" class="form-control" name="pis" placeholder="Pis" required>
                             </div>
                         </div>
+
+
                         <div class="form-group">
-                            <label for="inputCategoria" class="col-sm-2 control-label">Categoria CNH</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="categoria_cnh" placeholder="Categoria" required>
-                            </div>
+                        <label for="inputCategoria" class="col-sm-2 control-label">Categoria CNH</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="categoria_cnh" required="option">
+                                <option> </option>
+                                <option value="1">A</option>
+                                <option value="2">B</option>
+                                <option value="3">AB</option>
+                            </select>
                         </div>
+                    </div>
+
                         <div class="form-group">
                             <label for="inputNumeroCNH" class="col-sm-2 control-label">Numero CNH</label>
                             <div class="col-sm-10">

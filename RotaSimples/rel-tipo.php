@@ -79,7 +79,15 @@ $total = mysqli_num_rows($dados);
 
                     <tr>
                         <td><?php echo $linha['id']; ?></td>
-                        <td><?php echo $linha['tipo']; ?></td>
+                        <td>
+                            <?php
+                            if ($linha['tipo'] == 1) {
+                                echo "Normal";
+                            } else {
+                                echo "BusqueAqui";
+                            }
+                            ?>
+                        </td>
 
                     </tr>
 

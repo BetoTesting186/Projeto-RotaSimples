@@ -71,14 +71,13 @@ session_start();
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">Nivel de Acesso</label>
                         <div class="col-sm-10">
-                            <select class="form-control" name="nivel_de_acesso">
+                            <select class="form-control" name="nivel_de_acesso" required="option">
+                                <option ></option>
                                 <option value="1">Administrativo</option>
                                 <option value="2">Usuário</option>
                             </select>
                         </div>
                     </div>
-
-   
 
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">

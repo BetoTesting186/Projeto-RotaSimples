@@ -11,7 +11,7 @@ session_start();
         <meta name="author" content="Cesar">
         <link rel="icon" href="imagens/favicon.ico">
 
-        <title>Cadastrar veiculos</title>
+        <title>Cadastrar Tipo de Entrega</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
         <link href="css/theme.css" rel="stylesheet">
@@ -34,12 +34,17 @@ session_start();
                 <div class="col-md-12">
                     <form class="form-horizontal" method="POST" action="processa/proc_cad_tipo.php">
 
-                        <div class="form-group">
-                            <label for="inputTipo" class="col-sm-2 control-label">Tipo</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="tipo" placeholder="Tipo de Entrega" required autofocus>
-                            </div>
+
+                         <div class="form-group">
+                        <label for="inputTipo" class="col-sm-2 control-label">Tipo</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="tipo" required="option">
+                                <option ></option>
+                                <option value="1">Normal</option>
+                                <option value="2">BusqueAqui</option>
+                            </select>
                         </div>
+                    </div>
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">

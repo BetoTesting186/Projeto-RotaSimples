@@ -97,10 +97,29 @@ $total = mysqli_num_rows($dados);
                         <td><?php echo $linha['id']; ?></td>
                         <td><?php echo $linha['nome']; ?></td>
                         <td><?php echo $linha['idade']; ?></td>
-                        <td><?php echo $linha['sexo']; ?></td>
+                        <td>
+                            <?php
+                            if ($linha['sexo'] == 1) {
+                                echo "M";
+                            } else{
+                                echo "F";
+                            }
+                            ?>
+                        </td>
                         <td><?php echo $linha['endereco']; ?></td>
                         <td><?php echo $linha['pis']; ?></td>
-                        <td><?php echo $linha['categoria_cnh']; ?></td>
+                         <td>
+                            <?php
+                            if ($linha['categoria_cnh'] == 1) {
+                                echo "Moto";
+                            }if($linha['categoria_cnh'] == 2) {
+                                echo "Carro";
+                            }
+                            if($linha['categoria_cnh'] == 3) {
+                                echo "Moto/Carro";
+                            }
+                            ?>
+                        </td>
                         <td><?php echo $linha['numero_cnh']; ?></td>
 
                     </tr>

@@ -1,7 +1,7 @@
 ﻿<?php	
 
 	include_once("../conexao.php");
-	$html = '<table border=1';	
+	$html = '<table border=1 style="width: 100%;"';	
 	$html .= '<thead>';
 	$html .= '<tr>';
 	$html .= '<th>Código</th>';

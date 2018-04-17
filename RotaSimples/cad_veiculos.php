@@ -37,8 +37,12 @@ session_start();
 
                         <div class="form-group">
                             <label for="inputTipo" class="col-sm-2 control-label">Tipo</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="tipo" placeholder="Tipo do veículo" required autofocus>
+                            <div class="col-sm-10" placeholder="Tipo">
+                                <select class="form-control" name="tipo" required="option">
+                                <option></option> 
+                                <option value="1">Carro</option>
+                                <option value="2">Moto</option>
+                                </select>
                             </div>
                         </div>
 

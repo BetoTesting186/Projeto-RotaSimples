@@ -1,7 +1,7 @@
 ﻿<?php	
 
 	include_once("../conexao.php");
-	$html = '<table border=1';	
+	$html = '<table border=1 style="width: 100%;"'; 
 	$html .= '<thead>';
 	$html .= '<tr>';
 	$html .= '<th>Código</th>';
@@ -14,19 +14,23 @@
         $html .= '<th>Numero CNH</th>';
 	$html .= '</tr>';
 	$html .= '</thead>';
+
 	$html .= '<tbody>';
 	
 	$result_entregadores = "SELECT * FROM entregadores";
 	$resultado_entregadores = mysqli_query($conn, $result_entregadores);
+	$total = mysqli_num_rows($resultado_entregadores);
 	while($row_entregadores = mysqli_fetch_assoc($resultado_entregadores)){
 		$html .= '<tr><td>'.$row_entregadores['id'] . "</td>";
 		$html .= '<td>'.$row_entregadores['nome'] . "</td>";
 		$html .= '<td>'.$row_entregadores['idade'] . "</td>";
-                $html .= '<td>'.$row_entregadores['sexo'] . "</td>";
+		
+                $html .= '<td>'.$row_entregadores['sexo'] ."</td>";
                 $html .= '<td>'.$row_entregadores['endereco'] . "</td>";
                 $html .= '<td>'.$row_entregadores['pis'] . "</td>";
                 $html .= '<td>'.$row_entregadores['categoria_cnh'] . "</td>";
                 $html .= '<td>'.$row_entregadores['numero_cnh'] . "</td></tr>";	
+
 	}
 	
 	$html .= '</tbody>';

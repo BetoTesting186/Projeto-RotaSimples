@@ -1,7 +1,7 @@
-<?php	
+﻿<?php	
 
 	include_once("../conexao.php");
-	$html = '<table border=1';	
+	$html = '<table border=1 style="width: 100%;"';     	
 	$html .= '<thead>';
 	$html .= '<tr>';
 	$html .= '<th>Código</th>';
@@ -18,7 +18,9 @@
 		$html .= '<tr><td>'.$row_usuarios['id'] . "</td>";
 		$html .= '<td>'.$row_usuarios['nome'] . "</td>";
 		$html .= '<td>'.$row_usuarios['email'] . "</td>";
-		$html .= '<td>'.$row_usuarios['nivel_acesso_id'] . "</td></tr>";		
+		$html .= '<td>'.$row_usuarios['nivel_acesso_id']."</td></tr>";
+
+		
 	}
 	
 	$html .= '</tbody>';
