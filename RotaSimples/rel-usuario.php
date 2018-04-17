@@ -52,7 +52,9 @@ $total = mysqli_num_rows($dados);
             <div class="page-header">
 
                 <a href="sair.php"><button type="button" class="btn btn-danger" style="float: right;">Sair</button></a>
-                <a href="perfil-administrador.php"><button type="button" class="btn btn-info" style="float: right;margin-right: 4px">Inicio</button></a>
+                <a href="./relatoriosPDF/usuario-pdf.php"><button type="button" class="btn btn-warning" style="float: right;margin-right: 4px">Imprimir</button></a>
+                                <a href="perfil-administrador.php"><button type="button" class="btn btn-info" style="float: right;margin-right: 4px">Inicio</button></a>
+
                 <center><h1>Relatório de Usuários</h1></center>
             </div>
 
