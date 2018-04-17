@@ -36,12 +36,6 @@ session_start();
 
         </div>
 
-
-
-
-
-
-
         <div class="row">
             <div class="col-md-12">
                 <form class="form-horizontal" method="POST" action="processa/proc_cad_usuario.php">
@@ -83,6 +77,8 @@ session_start();
                             </select>
                         </div>
                     </div>
+
+   
 
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
