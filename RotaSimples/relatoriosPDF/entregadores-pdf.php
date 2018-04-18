@@ -52,6 +52,7 @@ while($row_entregadores = mysqli_fetch_assoc($resultado_entregadores)){
 
 $html .= '</tbody>';
 $html .= '</table>';
+$html .= '<center>Total de Entregadores: ' .$total.'</center>';
 
 
 	//referenciar o DomPDF com namespace

@@ -10,16 +10,17 @@ $html .= '</tr>';
 $html .= '</thead>';
 $html .= '<tbody>';
 
-$result_veiculos = "SELECT * FROM tipo_entrega";
-$resultado_veiculos = mysqli_query($conn, $result_veiculos);
-while($row_veiculos = mysqli_fetch_assoc($resultado_veiculos)){
-	$html .= '<tr><td>'.$row_veiculos['id'] . "</td>";
+$result_tipo = "SELECT * FROM tipo_entrega";
+$resultado_tipo = mysqli_query($conn, $result_tipo);
+$total = mysqli_num_rows($resultado_tipo);
+while($row_tipo = mysqli_fetch_assoc($resultado_tipo)){
+	$html .= '<tr><td>'.$row_tipo['id'] . "</td>";
 
 
-	if($row_veiculos['tipo'] == 1){
+	if($row_tipo['tipo'] == 1){
 		$html .= '<td>'.'Normal'."</td></tr>";
 	}
-	if($row_veiculos['tipo'] == 2){
+	if($row_tipo['tipo'] == 2){
 		$html .= '<td>'.'BusqueAqui'."</td></tr>";
 	}
 	
@@ -27,6 +28,7 @@ while($row_veiculos = mysqli_fetch_assoc($resultado_veiculos)){
 
 $html .= '</tbody>';
 $html .= '</table>';
+$html .= '<center>Total de Tipos: ' .$total.'</center>';
 
 
 	//referenciar o DomPDF com namespace
@@ -40,7 +42,7 @@ $dompdf = new DOMPDF();
 
 	// Carrega seu HTML
 $dompdf->load_html('
-	<h1 style="text-align: center;">Relatório de Veículos</h1>
+	<h1 style="text-align: center;">Relatório de Tipo de Entregas</h1>
 	'. $html .'
 	');
 

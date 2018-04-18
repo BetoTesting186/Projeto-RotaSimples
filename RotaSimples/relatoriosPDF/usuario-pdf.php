@@ -12,8 +12,10 @@ $html .= '</tr>';
 $html .= '</thead>';
 $html .= '<tbody>';
 
+
 $result_usuarios = "SELECT * FROM usuarios";
 $resultado_usuarios = mysqli_query($conn, $result_usuarios);
+$total = mysqli_num_rows($resultado_usuarios);
 while($row_usuarios = mysqli_fetch_assoc($resultado_usuarios)){
 	$html .= '<tr><td>'.$row_usuarios['id'] . "</td>";
 	$html .= '<td>'.$row_usuarios['nome'] . "</td>";
@@ -31,6 +33,7 @@ while($row_usuarios = mysqli_fetch_assoc($resultado_usuarios)){
 
 $html .= '</tbody>';
 $html .= '</table>';
+$html .= '<center>Total de Usuários: ' .$total.'</center>';
 
 
 	//referenciar o DomPDF com namespace

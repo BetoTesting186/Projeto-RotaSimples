@@ -19,6 +19,7 @@ $html .= '<tbody>';
 
 $result_veiculos = "SELECT * FROM veiculos";
 $resultado_veiculos = mysqli_query($conn, $result_veiculos);
+$total = mysqli_num_rows($resultado_veiculos);
 while($row_veiculos = mysqli_fetch_assoc($resultado_veiculos)){
 	$html .= '<tr><td>'.$row_veiculos['id'] . "</td>";
 
@@ -40,6 +41,7 @@ while($row_veiculos = mysqli_fetch_assoc($resultado_veiculos)){
 
 $html .= '</tbody>';
 $html .= '</table>';
+$html .= '<center>Total de Veículos: ' .$total.'</center>';
 
 
 	//referenciar o DomPDF com namespace
