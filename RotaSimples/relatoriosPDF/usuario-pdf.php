@@ -54,7 +54,7 @@ $dompdf->load_html('
 	//Renderizar o html
 $dompdf->render();
 
-	//Exibibir a página
+	//Exibir a página
 $dompdf->stream(
 	"relatorio_usuario.pdf", 
 	array(

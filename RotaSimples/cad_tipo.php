@@ -38,7 +38,7 @@ session_start();
                          <div class="form-group">
                         <label for="inputTipo" class="col-sm-2 control-label">Tipo</label>
                         <div class="col-sm-10">
-                            <select class="form-control" name="tipo" required="option">
+                            <select class="form-control" name="tipo" required="option" autofocus>
                                 <option ></option>
                                 <option value="1">Normal</option>
                                 <option value="2">BusqueAqui</option>

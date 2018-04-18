@@ -73,7 +73,7 @@ session_start();
                         <div class="col-sm-10">
                             <select class="form-control" name="nivel_de_acesso" required="option">
                                 <option ></option>
-                                <option value="1">Administrativo</option>
+                                <option value="1">Administrador</option>
                                 <option value="2">Usuário</option>
                             </select>
                         </div>
