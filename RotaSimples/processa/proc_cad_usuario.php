@@ -1,11 +1,11 @@
 <?php
 
-    $servidor = "localhost";
-	$usuario = "root";
-	$senha = "";
-	$dbname = "rotas";
-	
-	$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+$servidor = "localhost";
+$usuario = "root";
+$senha = "";
+$dbname = "rotas";
+
+$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 
 ?>
 
@@ -20,16 +20,16 @@ $senha 				= $_POST["senha"];
 $nivel_de_acesso 	= $_POST["nivel_de_acesso"];
 
 $query = ("INSERT INTO usuarios (nome, email, login, senha, nivel_acesso_id, created) VALUES "
-        . "('$nome', '$email', '$usuario', '$senha', '$nivel_de_acesso', NOW())");
+	. "('$nome', '$email', '$usuario', '$senha', '$nivel_de_acesso', NOW())");
 
 
 if (mysqli_query($conn, $query)) {
-    echo "<script>alert('Cadastro realizado com sucesso')</script>"; 
+	echo "<script>alert('Cadastro realizado com sucesso!!!'); location.href='../cad_usuario.php';</script>"; 
 
 
-    
 } else {
-    echo "<script>alert('Erro ao salvar')</script>";
+	echo "<script>alert('Erro ao salvar!!!'); location.href='../cad_usuario.php';</script>"; 
+
 
 
 }
