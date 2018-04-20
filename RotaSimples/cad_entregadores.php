@@ -11,7 +11,7 @@ session_start();
         <meta name="author" content="Cesar">
         <link rel="icon" href="imagens/favicon.ico">
 
-        <title>Cadastrar veiculos</title>
+        <title>Cadastrar Entregadores</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
         <link href="css/theme.css" rel="stylesheet">
