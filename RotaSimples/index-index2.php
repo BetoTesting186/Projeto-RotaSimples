@@ -53,7 +53,7 @@ and open the template in the editor.
                         <a href="#" class="dropdown-toggle  bg-light" style="background-color: #FFA500;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Movimentos<span class="caret"></span></a>
                         
                         <ul class="dropdown-menu bg-light " style="background-color: black;">
-                            <li><a class=" bg-light" style="background-color: #f60;" href="cadastro-donos.php"><font color="#fff">Lançamento de Entregas</font></a></li>
+                            <li><a class=" bg-light" style="background-color: #f60;" href="./maps/index.html"><font color="#fff">Lançamento de Entregas</font></a></li>
                         </ul>
                     </li>
                 

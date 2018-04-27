@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Title</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="src/main.css">
+</head>
+<body>
+    <main>
+        <!-- Menu Lateral -->
+        <aside class="padding">
+            <img class="display-block margin-auto" src="http://via.placeholder.com/100x75" alt="Logo" title="Logo">
+            <br><br>
+            <div>
+                <input id="end1" class="controls" type="text" placeholder="Endereço 1">
+            </div>
+            <div>
+                <input id="end2" class="controls" type="text" placeholder="Endereço 2">
+            </div>
+            <div>
+                <input id="end3" class="controls" type="text" placeholder="Endereço 3">
+            </div>
+            <div>
+                <button onclick="calculateRoute()" class="margin-top padding radius">CALCULAR ROTA</button>
+            </div>
+
+            <div id="info"></div>
+        </aside>
+
+        <!-- Google Maps -->
+        <section>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <script src="src/main.js"></script>
+    <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDILeeOH8gJ--3KTJPFOXDtBTxWAZAGHJQ&libraries=places&callback=initMap'></script>
+</body>
+</html>
