@@ -5,21 +5,42 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="src/main.css">
+
 </head>
 <body>
+
     <main>
         <!-- Menu Lateral -->
         <aside class="padding">
-            <img class="display-block margin-auto" src="http://via.placeholder.com/100x75" alt="Logo" title="Logo">
-            <br><br>
+
+            <center><h2>Lançamento de Entrega</h2></center>
+
+                <div>
+                    <input type="text" id="nomeEnt" class="controls" name= "nome" placeholder="Nome do Entregador" autofocus style="width: 90%;">
+                    <button class="btn btn-info" name="SendPesqEntregador" type="submit" style="width: 10%;float: right;height: 32px;margin-top: 10px;"></button>         
+
+                </div>
+            </form>
+                <div>
+                    <input id="tipoEnt" class="controls" type="text" placeholder="Tipo de Entrega" style="width: 90%;">
+                    <button class="btn btn-info" type="button" style="width: 10%;float: right;height: 32px;margin-top: 10px;"></button>
+                </div>
+                <div>
+                    <input id="tipoVei" class="controls" type="text" placeholder="Tipo de Veículo" style="width: 90%;">
+                    <button class="btn btn-info" type="button" style="width: 10%;float: right;height: 32px;margin-top: 10px;"></button>
+                </div>
+
+            <br>
+
+
             <div>
-                <input id="end1" class="controls" type="text" placeholder="Endereço 1">
+                <input id="end1" class="controls" type="text" placeholder="Endereço 1" style="width: 100%;">
             </div>
             <div>
-                <input id="end2" class="controls" type="text" placeholder="Endereço 2">
+                <input id="end2" class="controls" type="text" placeholder="Endereço 2" style="width: 100%;">
             </div>
             <div>
-                <input id="end3" class="controls" type="text" placeholder="Endereço 3">
+                <input id="end3" class="controls" type="text" placeholder="Endereço 3" style="width: 100%;">
             </div>
             <div>
                 <button onclick="calculateRoute()" class="margin-top padding radius">CALCULAR ROTA</button>
@@ -35,6 +56,6 @@
     </main>
 
     <script src="src/main.js"></script>
-    <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDILeeOH8gJ--3KTJPFOXDtBTxWAZAGHJQ&libraries=places&callback=initMap'></script>
+    <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBlWxCA9Lr7VgWBRgadVMvPP77876p3BT8&libraries=places&callback=initMap'></script>
 </body>
 </html>
